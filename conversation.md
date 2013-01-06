@@ -21,7 +21,7 @@ Some notes regarding the progress of this conversation:
 
 * *Create channel for game session*: When the channel is created, the `readers` and `writers` ACLs are set to be mutable, so that the game master may update who may participate in or observe the game session.
 
-	`{
+	{
 		"annotations": [
 			{
 				"type": "com.pilgrimagesoftware.proelia.session",
@@ -47,7 +47,7 @@ Some notes regarding the progress of this conversation:
 				"2345"
 			],
 		},		
-	}`
+	}
 
 * *Send broadcast message about game session*
 
