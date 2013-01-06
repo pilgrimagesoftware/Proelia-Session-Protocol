@@ -19,7 +19,7 @@ Some notes regarding the progress of this conversation:
 
 **Game Master**
 
-* *Create channel for game session*: When the channel is created, the `readers` and `writers` ACLs are set to be mutable, so that the game master may update who may participate in or observe the game session.
+*Create channel for game session*: When the channel is created, the `readers` and `writers` ACLs are set to be mutable, so that the game master may update who may participate in or observe the game session.
 
 	{
 		"annotations": [
@@ -49,7 +49,7 @@ Some notes regarding the progress of this conversation:
 		},		
 	}
 
-* *Send broadcast message about game session*
+*Send broadcast message about game session*
 
 	{
 		"session_id": "<uuid>",
