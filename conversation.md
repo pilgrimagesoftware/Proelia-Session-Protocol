@@ -26,6 +26,7 @@ Some notes regarding the progress of this conversation:
 			{
 				"type": "com.pilgrimagesoftware.proelia.session",
 				"value": {
+					"type": "session",
 					"name": "Sample session",
 					"started": "2012-12-31T23:59:59Z",
 					"system": "dndnext",
@@ -36,16 +37,42 @@ Some notes regarding the progress of this conversation:
 		],
 		"readers": {
 			"any_user": true,
-			"immutable": false,
+			"immutable": false
+		},
+		"type": "com.pilgrimagesoftware.proelia.session",
+		"writers": {
+			"immutable": true,
+			"user_ids": [
+				"1199"
+			]
+		},		
+	}
+
+*Create channel for requests*: ACLs are immutable(?)
+
+	{
+		"annotations": [
+			{
+				"type": "com.pilgrimagesoftware.proelia.session",
+				"value": {
+					"type": "requests",
+					"name": "Sample session request channel",
+					"started": "2012-12-31T23:59:59Z",
+					"session_id": "1234567"
+				}
+			},
+			...
+		],
+		"readers": {
+			"immutable": true,
+			"user_ids": [
+				"1199"
+			]
 		},
 		"type": "com.pilgrimagesoftware.proelia.session",
 		"writers": {
 			"immutable": false,
-			"user_ids": [
-				"1199",
-				"1234",
-				"2345"
-			],
+			"any_user": true
 		},		
 	}
 
